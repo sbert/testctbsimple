@@ -1,0 +1,12 @@
+# Application dependencies
+
+require:
+    - play
+    - crudtb -> crudtb
+
+repositories:
+    - registrationModules:
+        type:       local
+        artifact:   "${application.path}/../crudtb"
+        contains:
+            - crudtb -> *
